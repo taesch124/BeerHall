@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Beer Hall</title>
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Hanalei+Fill" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Russo+One" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header>
+            <div class="header_content">
+                <img class='logo_img' src="./assets/images/logos/brew_dog_logo.png">
+    
+                <nav class="primary_navigation">
+                    <ul>
+                        <li><a id="nav_catalog">Catalog</a></li>
+                        <li><a id="nav_favorites">Favorites</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+            
+        <div class="content">
+            <div class="search_bar">
+                <form>
+                    <input onkeypress="return search(event.keyCode);" id="search_bar" type="text">
+                    <input class='button' id="search_button" type="button" value="Search">
+                </form>
+            </div>
+    
+            <section class="card_display">
+                <!--Inserted through JavaScript-->
+            </section>
+
+            <section class="beer_display hidden">
+                <!--Values inserted through JavaScript-->
+                <div>
+                    <button class='button' id='back_button'>Back</button>
+                    <div class='beer_container'>
+                        
+                        <h2 id='beer_title'>Beer Title</h2>
+                        <div class='beer_content_left'>
+                            <img id='beer_poster'>
+                            <h4 id='beer_tagline'></h4>
+                        </div>
+                        <div class='beer_content_right'>
+                            <img id='beer_favorite' alt="favorited beer">
+                            <h6 id='beer_abv'></h6>
+                            <h6 id='beer_ibu'></h6>
+                            <p id ='beer_description'></p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <footer>
+            <div class="copyright">
+                <p>All rights are of Brewdog Brewery</p>
+            </div>
+        </footer>
+
+    </div>
+
+    
+    
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>

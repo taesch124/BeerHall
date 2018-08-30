@@ -1,0 +1,487 @@
+* {box-sizing: border-box;}
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+
+=============================================
+CSS Reset
+=============================================
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+/*
+=============================================
+Page Styles
+=============================================
+*/
+
+html,
+body,
+.wrapper {
+    background-color: lightgrey;
+}
+
+header,
+footer {
+    background-color: rgb(23, 155, 207);
+}
+
+.content {
+    padding: 10px 20px;
+    flex: 1 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+
+
+/*
+=============================================
+Typography
+=============================================
+*/
+
+.primary_navigation li, h1, h2, h3, #search_button {
+    font-family: 'Russo One', 'Hanalei Fill', sans-serif;
+    
+}
+
+h4, h5, h6, p, li, form, input, textarea {
+    font-family: 'Roboto', 'Fjalla One', sans-serif;
+}
+
+.primary_navigation li {
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 52px;
+    color: rgb(23, 155, 207);
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: rgb(23, 155, 207);
+}
+
+h4 {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    color: grey;
+    text-shadow: 2px 2px 1px rgb(42, 40, 40);
+}
+
+h6 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 200;
+}
+
+p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.button {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+}
+
+#search_bar {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+/*
+=============================================
+Header
+=============================================
+*/
+
+.logo_img {
+    height: 90px;
+    width: 100px;
+    padding-right: 40px;
+}
+
+.header_content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 30px;
+}
+
+header {
+    flex: 0 0 auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.content {
+    margin-top: 150px;
+    margin-bottom: 70px;
+}
+
+
+/*
+=============================================
+Footer
+=============================================
+*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    flex: 0 0 auto;
+    z-index: 1;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 24px;
+}
+
+
+
+/*
+=============================================
+Navigation
+=============================================
+*/
+
+
+.primary_navigation li {
+    display: inline;
+    padding-right: 15px;
+}
+
+.primary_navigation li:last-child {
+    padding-right: 0;
+}
+
+.primary_navigation li:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+
+
+
+/*
+=============================================
+Search Page
+=============================================
+*/
+
+.search_bar form {
+    margin: 30px 0;
+    width: fit-content;
+}
+
+.search_bar {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.card_display {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.button {
+    margin-left: 5px;
+    background-color: rgb(23, 155, 207);
+    color: white;
+}
+
+#search_bar {
+    border: 0;
+    background-color: lightgray;
+    border-bottom: 3px solid rgb(23, 155, 207);
+    padding: 0 5px;
+}
+
+#search_bar:focus {
+    outline: none !important;
+    border: 2px solid solid rgb(23, 155, 207);
+    border-radius: 3px;
+}
+
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0 30px lightgray inset;
+    -webkit-box-shadow: 0 0 0 30px lightgray inset;
+}
+
+
+
+
+/*
+=============================================
+Beer Card
+=============================================
+*/
+
+
+.beer_card{
+    background-color: white;
+    border: 2px solid rgb(201, 201, 201);
+    border-radius: 5px;
+    box-shadow: 4px 7px 3px rgb(143, 143, 143);
+    display: inline-flex;
+    flex-flow: row nowrap;
+    flex: 1 1 auto;
+    align-items: center;
+    min-width: 320px;
+    max-width: 460px;
+    min-height: 200px;
+    margin: 15px;
+}
+
+.beer_card:hover {
+    cursor: pointer;
+}
+
+.beer_poster {
+    padding: 0 20px;
+    flex: 1 0 auto;
+}
+
+.beer_info {
+    display: flex;
+    flex: 0 1 auto;
+    min-height: 160px;
+    height: 100%;
+    flex-flow: column;
+    padding: 0px 20px 25px 0;
+    overflow: hidden;
+}
+
+.favorite_container {
+    display: block;
+    padding: 15px 0;
+}
+
+.beer_favorite {
+    float: right;
+}
+
+.beer_favorite:hover {
+    background-image: url('./assets/images/icons/favorite_star_empty_yellow.png');
+    width: 0;
+    height: 0;
+}
+
+.beer_header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.beer_abv,
+.beer_name {
+    align-self: center;
+}
+
+.beer_name {
+    display: flex;
+}
+
+.beer_abv {
+    margin-left: 15px;
+    flex: 0 0 0 auto;
+    align-self: flex-end;
+}
+
+.beer_details {
+    position: relative;
+    min-height: 0;
+    flex: 1 1 10px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+
+
+.description_fade {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background: -moz-linear-gradient( 
+        to bottom,
+        transparent,
+        white 100%
+    );
+    background: -o-linear-gradient(
+         to bottom,
+        transparent,
+        white 100%
+    );
+    background: linear-gradient( 
+        to bottom,
+        transparent,
+        white 100%
+    );
+}
+
+
+
+/*
+=============================================
+Beer Display
+=============================================
+*/
+
+@media only screen and (max-width: 600px) {
+    .beer_display {
+        width: 80%;
+    }
+}
+
+.beer_display {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.beer_container {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    min-width: 270px;
+}
+
+#beer_title {
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.beer_content_left {
+    width:50%;
+    min-width: 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+
+#beer_poster {
+    padding: 10px 0;
+    align-self: center;
+}
+
+#beer_tagline {
+    padding: 0 6px;
+    text-align: center;
+}
+
+.beer_content_right {
+    width:50%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: center;
+    align-items: flex-end;
+}
+
+#beer_favorite:hover {
+    cursor: pointer;
+    background-image: url('./assets/images/icons/favorite_star_empty_yellow.png');
+    width: 0;
+    height: 0;
+}
+
+#beer_abv,
+#beer_ibu {
+    text-align: right;
+}
+
+#beer_description {
+    text-align: justify;
+    padding-top: 20px 0;
+}
+
+
+
+
+/*
+=============================================
+Special Classes
+=============================================
+*/
+
+.hidden {
+    display: none;
+}
