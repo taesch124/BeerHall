@@ -62,6 +62,7 @@ Page Styles
 html,
 body,
 .wrapper {
+    height: 100%;
     background-color: lightgrey;
 }
 
@@ -71,8 +72,11 @@ footer {
 }
 
 .content {
+    margin-top: 150px;
+    margin-bottom: 70px;
+    height: 100%;
     padding: 10px 20px;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
 }
 
 .wrapper {
@@ -185,11 +189,6 @@ header {
     z-index: 1;
 }
 
-.content {
-    margin-top: 150px;
-    margin-bottom: 70px;
-}
-
 
 /*
 =============================================
@@ -252,6 +251,7 @@ Search Page
 .search_bar {
     width: fit-content;
     margin: 0 auto;
+    align-self: flex-start;
 }
 
 .card_display {
@@ -415,7 +415,13 @@ Beer Display
 .beer_display {
     width: 60%;
     margin: 0 auto;
+    padding: 10% 0;
 }
+
+.beer_display_content {
+    align-self: center;
+}
+
 
 .beer_container {
     display: inline-flex;
