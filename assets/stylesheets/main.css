@@ -65,6 +65,10 @@ body,
     background-color: lightgrey;
 }
 
+header {
+    box-shadow: 0px 3px 3px rgb(57, 56, 56);
+}
+
 header,
 footer {
     background-color: rgb(23, 155, 207);
